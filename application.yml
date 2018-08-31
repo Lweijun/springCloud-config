@@ -1,32 +1,3 @@
 ﻿server:
   port: 7001
 
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.example.service01.bean    # 所有Entity别名类所在包
-  mapper-locations:
-  - classpath:/mybatis/mapper/*.xml
-
-spring:
-   application:
-    name: service-01
-   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource            # ��ǰ����Դ��������
-    driver-class-name: org.gjt.mm.mysql.Driver              # mysql������
-    url: jdbc:mysql://192.168.234.128:33306/springclloud               # ���ݿ�����
-    username: root
-    password: 123456
-    dbcp2:
-      min-idle: 5                                           # ���ݿ����ӳص���Сά��������
-      initial-size: 5                                       # ��ʼ��������
-      max-total: 5                                          # ���������
-      max-wait-millis: 200
-
-eureka:
-  client: #�ͻ���ע���eureka�����б���
-    service-url:
-      defaultZone: http://localhost:9001/eureka
-      #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
-  instance:
-    instance-id: service-01
-    prefer-ip-address: true     #����·��������ʾIP��ַ
