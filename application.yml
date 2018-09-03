@@ -12,6 +12,8 @@ spring:
     name: config-service-dev
     
 ---
+server:
+  port: 7001
 spring:
    profiles: test
    application:
