@@ -12,10 +12,11 @@ spring:
     name: config-service-dev
     
 ---
+
 server:
   port: 7001
 spring:
-   profiles: service-01
+   profiles: service01
    application:
     name: service-01
    datasource:
@@ -35,11 +36,13 @@ mybatis:
   type-aliases-package: com.example.service01.bean    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:/mybatis/mapper/*.xml
+
 ---
+
 server:
   port: 9002
 spring:
-   profiles: service-02
+   profiles: service02
    application:
     name: service-01
    datasource:
