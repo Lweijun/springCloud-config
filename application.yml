@@ -5,16 +5,16 @@ spring:
    application:
     name: service-01
    datasource:
-    dbcp2:
-         min-idle: 5                                           
-         initial-size: 5                                       
-         max-total: 5                                          
-         max-wait-millis: 200
-    type: com.alibaba.druid.pool.DruidDataSource            
-    driver-class-name: org.gjt.mm.mysql.Driver              
-    password: 123456
-    url: jdbc:mysql://192.168.234.131:33306/springclloud             
+    type: com.alibaba.druid.pool.DruidDataSource            # ��ǰ����Դ��������
+    driver-class-name: org.gjt.mm.mysql.Driver              # mysql������
+    url: jdbc:mysql://192.168.234.128:33306/springclloud               # ���ݿ�����
     username: root
+    password: 123456
+    dbcp2:
+      min-idle: 5                                           # ���ݿ����ӳص���Сά��������
+      initial-size: 5                                       # ��ʼ��������
+      max-total: 5                                          # ���������
+      max-wait-millis: 200
  
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
