@@ -5,16 +5,16 @@ spring:
    application:
     name: service-01
    datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver            
-    url: jdbc:mysql://192.168.234.131:33306/springclloud 
-    username: root
-    password: 123456
     dbcp2:
-      min-idle: 5                                          
-      initial-size: 5                                      
-      max-total: 5                                          
-      max-wait-millis: 200
+         min-idle: 5                                           
+         initial-size: 5                                       
+         max-total: 5                                          
+         max-wait-millis: 200
+    type: com.alibaba.druid.pool.DruidDataSource            
+    driver-class-name: org.gjt.mm.mysql.Driver              
+    password: 123456
+    url: jdbc:mysql://192.168.234.131:33306/springclloud             
+    username: root
  
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
@@ -31,19 +31,19 @@ spring:
    application:
     name: service-01
    datasource:
-    type: com.alibaba.druid.pool.DruidDataSource          
-    driver-class-name: org.gjt.mm.mysql.Driver            
-    url: jdbc:mysql://192.168.234.131:33306/springclloud         
-    username: root
-    password: 123456
     dbcp2:
-      min-idle: 5                                          
-      initial-size: 5                                      
-      max-total: 5                                          
-      max-wait-millis: 200
+         min-idle: 5                                           
+         initial-size: 5                                       
+         max-total: 5                                          
+         max-wait-millis: 200
+    type: com.alibaba.druid.pool.DruidDataSource            
+    driver-class-name: org.gjt.mm.mysql.Driver              
+    password: 123456
+    url: jdbc:mysql://192.168.234.131:33306/springclloud             
+    username: root
  
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+  config-location: classpath:mybatis/mybatis.cfg.xml        
   type-aliases-package: com.example.service01.bean    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:/mybatis/mapper/*.xml
