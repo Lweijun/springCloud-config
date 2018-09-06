@@ -1,21 +1,6 @@
 ﻿server:
   port: 7001
 spring:
-  profiles:
-    active:
-    - dev
----
-
-spring:
-  profiles: dev
-  application:
-    name: config-service-dev
-    
----
-
-server:
-  port: 7001
-spring:
    profiles: service01
    application:
     name: service-01
