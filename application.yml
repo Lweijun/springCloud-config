@@ -7,7 +7,7 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # ��ǰ����Դ��������
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql������
-    url: jdbc:mysql://192.168.234.128:33306/springclloud               # ���ݿ�����
+    url: jdbc:mysql://192.168.234.131:33306/springclloud               # ���ݿ�����
     username: root
     password: 123456
     dbcp2:
