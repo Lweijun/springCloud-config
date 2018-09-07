@@ -29,7 +29,7 @@ server:
 spring:
    profiles: service02
    application:
-    name: service-02
+    name: service-01
    datasource:
     dbcp2:
          min-idle: 5
